@@ -2,9 +2,6 @@ wifi:
   ssid: !secret wifi_ssid
   password: !secret wifi_password
 
-ap:
-  ssid: ${name}
-
 # Enable the captive portal for inital WiFi setup
 captive_portal:
 
@@ -29,8 +26,8 @@ esphome:
   # This will allow for (future) project identification,
   # configuration and updates.
   project:
-    name: adonno.tag_reader
-    version: "1.4"
+    name: mtuckerb.tag_reader
+    version: "1.4.1"
 # If buzzer is enabled, notify on api connection success
   on_boot:
     priority: -10
